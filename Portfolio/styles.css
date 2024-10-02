@@ -1,0 +1,177 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;1,200;1,700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+
+body{
+    background-color: rgb(0, 0, 33);
+    color:white;
+    font-family:"Poppins", sans-serif;
+}
+
+main hr{
+  border: 0;
+  background-color: #9c97f1;
+  height: 1.2px;
+  margin: 40px 84px;
+}
+
+  nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 90px;
+    padding: 0 5px;
+    background-color: rgb(1, 1, 12);
+  }
+
+  nav ul{
+    display: flex;
+    justify-content: center;
+  }
+
+  nav ul li{
+    list-style: none;
+    margin: 0 23px;
+  }
+
+  nav ul li a{
+    text-decoration:  none;
+    color: white;
+  }
+  nav ul li a:hover{
+    color: lavender;
+    font-weight: 500;
+    font-size: 1.02rem;
+    transition: ease-in-out 0.3s;
+  }
+
+.left{
+    font-size:  1.5rem;
+    padding-left: 10px ;
+}
+
+.home{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin: 80px 0;
+
+}
+
+.home > div{
+  width: 30%;
+}
+
+.leftsection{
+  font-size: 2.5rem;
+}
+
+.rightsection img{
+  width:90%;
+}
+
+.element{
+  color: lavender;
+}
+
+.about-section {
+  padding: 50px 20px;
+  color: #fff;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.section-title {
+  font-size: xx-large;
+  margin-bottom: 20px;
+  margin: auto;
+  text-align: left;
+  color: #fff;
+  width: 80vw;
+}
+
+.about-text {
+  width: 80vw;
+  margin:30px auto;
+  text-align: left;
+  font-size: 1.2em;
+  line-height: 1.6;
+  color: #dcdcdc;
+  font-family: 'Poppins', sans-serif;
+}
+
+strong {
+  color: #8a4af3; 
+}
+
+
+
+footer {
+  background-color: rgba(0, 0, 0, 0.224);
+  height: auto;
+}
+
+footer h1 {
+  padding-top: 10px;
+  width: 80vw;
+  font-size: xx-large;
+  margin: 10px auto;
+}
+
+.footer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 32px;
+}
+
+.inp-email {
+  margin: 10px 0;
+  background-color: rgb(9, 0, 20);
+  border: solid white 0.5px;
+  padding: 5px;
+  border-radius: 90px;
+  color: aliceblue; 
+}
+
+.inp-email::placeholder {
+  text-align: center;
+  color: white;
+}
+
+.inp-email:focus {
+  background-color: rgb(9, 0, 20); 
+  color: aliceblue; 
+  outline: none; 
+}
+
+.inp-email:not(:placeholder-shown) {
+  background-color: rgb(9, 0, 20); 
+  color: aliceblue;
+}
+
+.btn {
+  margin-top: 15px;
+  color: whitesmoke;
+  background-color: rgb(9, 0, 20);
+  border: solid white 0.5px;
+  padding: 5px 15px;
+  border-radius: 90px;
+}
+
+/* Utils */
+
+.purple{
+  color: rgb(173, 118, 224);
+}
+
+/* Utils */

@@ -1,0 +1,83 @@
+/* #Contact {
+    background: url(photos/cntbk\ \(2\).jpg);
+    background-size: cover;
+    background-position: center;
+    min-height: 100vh;
+    /* padding: 20vh 2vw; */
+    /* display: flex;
+    flex-direction: column;
+    justify-content: center; */
+}
+
+/* #Contact .subhed {
+    align-self: auto;
+    margin-top: 20px;
+} */
+
+.ctcnt {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    max-width: 600px;
+    /* Limit the width of the contact form */
+    padding: 10vh;
+    background: rgba(0,
+            0,
+            0,
+            0.7);
+    /* Add background color to make the form visible */
+    border-radius: 10px;
+}
+
+/* .ctcnt h1 {
+    font-size: 4vh;
+    margin-bottom: 2vh;
+    color: #fff;
+} */
+
+.ctcnt form {
+    flex-direction: row;
+    justify-content: center;
+    text-align: center;
+}
+
+.ctcnt label {
+    font-family: "Bree Serif", serif;
+    text-align: center;
+    font-size: 5vh;
+    color: var(--basetext);
+}
+
+.ctcnt input {
+    padding: 1.5vh;
+    margin: 1vh 0;
+    border-radius: 3vh;
+    border: #23001e solid;
+    box-shadow: 5px 5px 10px 2px var(--accentshadow);
+    background-color: var(--accentcolour);
+    color: var(--textcolor);
+    font-size: 1rem;
+}
+
+.ctcnt button {
+    padding: 1.5vh;
+    margin: 1vh 0;
+    width: 100%;
+    border-radius: 2vh;
+    background-color: #23001e;
+    color: #fff;
+    font-size: 1.2rem;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.ctcnt button:hover {
+    background-color: #3a002e;
+    /* Darker hover state */
+}
+
+#email::placeholder {
+    color: var(--textcolor);
+    text-align: center;
+} 

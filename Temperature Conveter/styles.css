@@ -1,0 +1,90 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #121212; /* Dark background */
+    color: #ffffff; /* Light text color */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.container {
+    background: #1e1e1e; /* Darker container */
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 20px rgba(255, 255, 255, 0.2); /* Glowing effect */
+    text-align: center;
+    transition: box-shadow 0.3s ease; /* Smooth transition for glow */
+}
+
+.container:hover {
+    box-shadow: 0 0 30px rgba(255, 255, 255, 0.4); /* Increase glow on hover */
+}
+
+input[type="number"] {
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    margin-top: 10px;
+    background-color: #333; /* Dark background for input */
+    color: #ffffff; /* White text color */
+    font-size: 1em; /* Base font size */
+    width: 100%; /* Full width */
+}
+
+.unit-selector {
+    margin: 20px 0;
+    text-align: left; /* Align unit labels to the left */
+}
+
+.unit-selector label {
+    font-size: 1.2em; /* Increased font size for unit labels */
+}
+
+button {
+    padding: 10px 15px;
+    background-color: #6200ea; /* Purple button */
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+    transition: background-color 0.3s ease; /* Smooth transition for background color */
+}
+
+button::after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 300%;
+    height: 300%;
+    background: rgba(255, 255, 255, 0.2); /* Glow effect */
+    border-radius: 50%;
+    transform: translate(-50%, -50%) scale(0);
+    transition: transform 0.5s ease; /* Smooth transition for glow */
+    z-index: 0;
+}
+
+button:hover::after {
+    transform: translate(-50%, -50%) scale(1); /* Expand glow effect on hover */
+}
+
+button:hover {
+    background-color: #3700b3; /* Darker purple on hover */
+    color: white;
+}
+
+button span {
+    position: relative; /* Ensures text is above the glow */
+    z-index: 1; /* Keep the text above the glow */
+}
+
+.result {
+    margin-top: 20px;
+    font-size: 1.2em; /* Reduced font size for output */
+    color: #bb86fc; /* Light purple for result text */
+    text-align: left; /* Align output text to the left */
+}   
